@@ -38,6 +38,7 @@
 }
 .sidebar{
     width: 150px;
+    background-color: black;
 }
 .play-container{
     padding: 2rem 0;
@@ -58,5 +59,15 @@
 }
 .btn-upgrade{
     background: none;
+    color: white;
+}
+.logo-small-spotify{
+    height: 60px;
+    width: 60px;
+}
+.container-logo-spotify{
+    padding: .4rem;
+}
+.spotify{
     color: white;
 }
