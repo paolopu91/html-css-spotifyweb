@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif
 }
 .txt-center{
     text-align: center;
@@ -32,13 +33,30 @@
 .top-bar{
     padding: 1rem 0;
 }
+.row-reverse{
+    flex-direction: row-reverse;
+}
 .sidebar{
     width: 150px;
 }
 .play-container{
-    padding: 1rem 0;
-
+    padding: 2rem 0;
 }
 .align-items-stretch{
     align-items: stretch;
+}
+.opacity{
+    opacity: .8;
+}
+.bg-black{
+    background-color: black;
+}
+.btn{
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 1rem;
+}
+.btn-upgrade{
+    background: none;
+    color: white;
 }
