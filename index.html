@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/34ba7cedd4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Spotifyweb</title>
@@ -12,18 +13,17 @@
     <!-- sezione centrale della mia web app con 100wh -->
     <div class="section-container">
         <!-- blocco principlae con grow= 1 e stretch-->
-        <div class="flex-grow align-items-stretch d-flex">
+        <div class="flex-grow align-items-stretch d-flex overflow-hidden">
 
             <!-- sidebar del mio spotify con una larghezza fissa -->
             <div class="sidebar flex-column flex-shrink d-flex">
                 <!-- contenitore logo spotify -->
-                <div class="container-logo-spotify d-flex">
-                    <div class="logo-small-spotify"><img src="img/logo-small.svg" alt=""></div>
-                    <h2 class="spotify">Spotify</h2>
+                <div class="container-logo-spotify d-flex flex-shrink">
+                     class="logo-small-spotify"><img src="img/logo.svg" alt="">
                 </div>
 
                 <!-- contenitore pulsanti spotify -->
-                <div class="icons-spotify d-flex flex-column">
+                <div class="icons-spotify d-flex flex-column flex-shrink">
                     <div class="icons d-flex"><img src="img/home.svg" alt="tasto home"><a class="color-txt-white">Home </a> </div> 
                     <div class="icons d-flex"><img src="img/search.svg" alt="btn search"><a class="color-txt-white">Search</a> </div> 
                     <div class="icons d-flex"><img src="img/libreria.svg" alt="libreria spotify"><a class="color-txt-white">Libreria</a> </div> 
@@ -31,16 +31,48 @@
                 </div>
 
                 <!-- contenitore playlist spotify -->
-                <div class="container-playlist">
+                <div class="container-playlist d-flex flex-column overflow-hidden">
                     <!-- crea e personalizza playlist -->
-                    <div></div>
+                    <div class="crea-playlist padding">
+                        <h2 class="padding color-txt-white">playlist</h2>
+                        <div class="plus d-flex"><i class="fa-solid fa-plus"></i><span class="color-txt-lightgray">Crea playlist</span></div>
+                        
+                    </div>
 
                     <!-- elenco playlist -->
-                    <div></div>
+                    <div class="playlist flex-grow overflow-auto padding">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- contenitore installa app e nome utente -->
-                <div class="user"></div>
+                <div class="user flex-shrink d-flex flex-column padding">
+                    <a class="color-txt-lightgray">Installa app</a>
+                    <hr>
+                    <div class="container-svg-profile d-felx"><img class="svg-profile" src="img/profile.svg" alt=""> <a class="color-txt-white">John Doe</a></div>
+
+                </div>
             </div>
 
             <!-- contenitore delle canzoni di spotify -->

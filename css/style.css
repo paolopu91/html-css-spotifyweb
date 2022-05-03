@@ -67,6 +67,7 @@
 }
 .container-logo-spotify{
     padding: .4rem;
+    justify-content: end;
 }
 .spotify{
     color: white;
@@ -80,4 +81,24 @@
 }
 .color-txt-white{
     color: white;
+}
+.padding{
+    padding: .4rem;
+}
+.plus{
+    background-color: lightslategray;
+    aspect-ratio: 1px/1px;
+}
+.color-txt-lightgray{
+    color: lightslategray;
+}
+.container-svg-profile{
+    color: white;
+}
+.svg-profile{
+    width: 20px;
+    height: 20px;
+    background-color: lightslategray;
+    border-radius: 50%;
+    opacity: .8;
 }
