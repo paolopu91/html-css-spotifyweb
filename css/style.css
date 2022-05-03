@@ -42,6 +42,7 @@
 }
 .play-container{
     padding: 2rem 0;
+    background-color: grey;
 }
 .align-items-stretch{
     align-items: stretch;
