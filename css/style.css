@@ -46,6 +46,35 @@ body{
 .flex-column{
     flex-direction: column;
 }
+.container-main{
+    padding: .5rem 1rem;
+    background-color: #141922;
+}
+.container-link-spotify{
+    text-align: center;
+}
+.link-spotify{
+    padding: 1em;
+}
+
+.spotify-music-row{
+    padding: 2em 0;
+    font-size: 15px;
+}
+.square{
+    padding: .8rem;
+    width: calc(100% / 6);
+}
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-square{
+    width: 100%;
+}
+.font-size-title-main{
+    font-size: 30px;
+}
 .top-bar{
     padding: 1rem 0;
 }
