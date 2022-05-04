@@ -5,6 +5,9 @@
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
 }
+.font-weight{
+    font-weight: bold;
+}
 .font-size-title{
     font-size: 20px;
 }
@@ -128,7 +131,7 @@
     justify-content: space-between;
 }
 .img-sinister-size{
-    width: 50%;
+    width: 100%;
 }
 .container-img-player{
     width: 20%;
@@ -136,11 +139,75 @@
 .container-nome-brano{
     margin-left: .8rem;
 }
+.title-brano{
+    font-size: 14px;
+    font-weight: bold;
+}
+.subtitle-brano{
+    font-size:10px;
+}
 .img-player{
-   margin-left: -30px;
+   margin-left: 10px;
    width: 20%;
    justify-content: flex-end;
 }
 .container-icons-player{
     margin-left: 2rem;
+}
+.container-player-central{
+  max-width: 700px;
+}
+.container-up-player{
+    justify-content: center;
+    margin-bottom: .5em;
+}
+.container-btn-player{
+    
+}
+.btn-player{
+    padding: 0 3rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.btn-play{
+    border: 3px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    padding: 0 .4rem;
+}
+.container-down-player{
+    justify-content: center;
+}
+.sec-player{
+    font-size: 10px;
+    justify-content: center;
+    margin-right: 1em;
+}
+.progress-bar{
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: .5em;
+    background-color: grey;
+    border-radius: 1.5em;
+}
+.progress-bar::before{
+    content: attr(data-label);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    width: 200px;
+    min-width:.5rem;
+    max-width: calc(100% - 1em);
+    border-radius: .5em;
+}
+.tot-sec-player{
+    font-size: 10px;
+    margin-left: 1em;
 }

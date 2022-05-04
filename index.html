@@ -35,21 +35,21 @@
                     <!-- crea e personalizza playlist -->
                     <div class="crea-playlist padding">
                         <h2 class="margin-bottom font-size-title padding color-txt-white">Playlist</h2>
-                        <a><span class="plus">+</span><span class="color-txt-white">Crea Playlist</span></a>
+                        <a><span class="plus">+</span><span class="color-txt-white font-weight">Crea Playlist</span></a>
                     </div>
 
                     <!-- elenco playlist -->
                     <div class="playlist flex-grow overflow-auto padding">
                         <ul>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
-                            <li class="color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
+                            <li class="font-weight color-txt-lightgray">Nuova playlist</li>
                         
                         </ul>
                     </div>
@@ -91,8 +91,8 @@
 
                 <!-- container con nome brano -->
                 <div class="container-nome-brano d-flex flex-column align-center color-txt-white">
-                    <a>Sinister</a>
-                    <a class="color-txt-lightgray">Brano Nome</a>
+                    <a class="title-brano">Sinister</a>
+                    <a class="subtitle-brano color-txt-lightgray">Brano Nome</a>
                 </div>
 
                 <!-- container con icone hearth e cartella -->
@@ -104,25 +104,33 @@
 
             <!-- container centrale con il tasto play e barra di riproduzione -->
             <!-- dare una max-width -->
-            <div class="container-player-central flex-grow padding flex-shrink">
+            <div class="container-player-central flex-grow padding align-center flex-shrink">
                 <!-- container sezione centrale -->
                 
                     <!-- container superiore -->
-                    <div>
+                    <div class="container-up-player d-flex align-center d-felx">
                         <!-- icone play/indietro/avanti -->
-                        <div></div>
+                        <div class="d-flex container-btn-player">
+                            <div class="btn-player"><i class="fa-solid fa-shuffle"></i></div>
+                            <div class="btn-player"><i class="fa-solid fa-backward-step"></i></div>
+                            <div class="btn-player btn-play"><i class="fa-solid fa-play"></i></div>
+                            <div class="btn-player"><i class="fa-solid fa-forward-step"></i></div>
+                            <div class="btn-player"><i class="fa-solid fa-rotate-right"></i></div>
+                        </div>
                     </div>
 
                     <!-- container inferiore -->
-                    <div>
+                    <div class="container-down-player d-flex">
                         <!-- container time -->
-                        <div></div>
+                        <div class="sec-player d-flex color-txt-white">0.25</div>
 
                         <!-- container barra di riproduzione -->
-                        <div></div>
+                        <div class="progress-bar"></div>
 
                         <!-- container total time -->
-                        <div></div>
+                        <div class="d-flex">
+                            <span class="color-txt-white tot-sec-player">4.35</span>
+                        </div>
                     </div>
                 </div>
                    
