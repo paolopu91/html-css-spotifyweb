@@ -2,10 +2,20 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Montserrat',sans-serif
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+}
+.font-size-title{
+    font-size: 20px;
 }
 .txt-center{
     text-align: center;
+}
+.margin-bottom{
+    margin-bottom: .7rem;
+}
+.align-center{
+    align-items: center;
 }
 .flex-shrink{
     flex-shrink: 0;
@@ -40,10 +50,6 @@
     width: 150px;
     background-color: black;
 }
-.play-container{
-    padding: 2rem 0;
-    background-color: grey;
-}
 .align-items-stretch{
     align-items: stretch;
 }
@@ -66,6 +72,9 @@
     height: 60px;
     width: 60px;
 }
+.crea-playlist{
+    margin-bottom: 1rem;
+}
 .container-logo-spotify{
     padding: .4rem;
     justify-content: end;
@@ -77,8 +86,14 @@
     padding: .4rem;
 }
 .icons{
+    padding: .3rem;
+    align-items: center;
     width: 35px;
     margin-bottom: .6rem;
+}
+.icon-user{
+    width: 15px;
+    height: 15px;
 }
 .color-txt-white{
     color: white;
@@ -87,8 +102,9 @@
     padding: .4rem;
 }
 .plus{
+    padding: .3rem;
     background-color: lightslategray;
-    aspect-ratio: 1px/1px;
+    aspect-ratio: 1/1;
 }
 .color-txt-lightgray{
     color: lightslategray;
@@ -99,7 +115,32 @@
 .svg-profile{
     width: 20px;
     height: 20px;
-    background-color: lightslategray;
+    background-color: #282828;
     border-radius: 50%;
     opacity: .8;
+}
+.bg-color-main{
+    background-color: #282828;
+}
+.play-container{
+    padding: 1rem 0;
+    background-color: #282828;
+    justify-content: space-between;
+}
+.img-sinister-size{
+    width: 50%;
+}
+.container-img-player{
+    width: 20%;
+}
+.container-nome-brano{
+    margin-left: .8rem;
+}
+.img-player{
+   margin-left: -30px;
+   width: 20%;
+   justify-content: flex-end;
+}
+.container-icons-player{
+    margin-left: 2rem;
 }
