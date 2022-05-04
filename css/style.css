@@ -210,7 +210,24 @@ body{
     max-width: calc(100% - 1em);
     border-radius: .5em;
 }
+.container-btn-smp{
+    padding: .5em;
+    align-items: center;
+}
 .tot-sec-player{
     font-size: 10px;
     margin-left: 1em;
+}
+.little-progress-bar{
+    height: 5px;
+    background-color: grey;
+    border: 1px solid rgb(12, 11, 11);
+    border-radius: 10px;
+    max-width: 100px;
+    min-width: 100px;
+}
+.little-progress-bar-content{
+    width: 20%;
+    height: 3px;
+    background-color: white;
 }
