@@ -12,6 +12,7 @@
 <body> 
     <!-- sezione centrale della mia web app con 100wh -->
     <div class="section-container">
+       
         <!-- blocco principlae con grow= 1 e stretch-->
         <div class="flex-grow align-items-stretch d-flex overflow-hidden">
 
@@ -24,7 +25,7 @@
 
                 <!-- contenitore pulsanti spotify -->
                 <div class="icons-spotify d-flex flex-column flex-shrink">
-                    <div class="icons d-flex"><img src="img/home.svg" alt="tasto home"><a class="color-txt-lightgray">Home </a> </div> 
+                    <div class="icons icon-home-border-left d-flex"><img src="img/home.svg" alt="tasto home"><a class="color-txt-lightgray">Home </a> </div> 
                     <div class="icons d-flex"><img src="img/search.svg" alt="btn search"><a class="color-txt-lightgray">Search</a> </div> 
                     <div class="icons d-flex"><img src="img/libreria.svg" alt="libreria spotify"><a class="color-txt-lightgray">Libreria</a> </div> 
 
@@ -68,7 +69,7 @@
             </div>
 
             <!-- contenitore delle canzoni di spotify -->
-            <div class="flex-grow d-flex flex-column">
+            <div class="flex-grow d-flex overflow-hidden flex-column">
                 <div class="top-bar flex-shrink row-reverse d-flex bg-black">
                     <button class="btn btn-upgrade">
                         EFFETTUA L'UPGRADE
@@ -80,7 +81,7 @@
 
                     <!-- link di spotify -->
                     <div class="container-link-spotify">
-                        <a class="link-spotify color-txt-lightgray font-weight">IN EVIDENZA</a>
+                        <a class="link-spotify link-spotify-border-bottom-green color-txt-lightgray font-weight">IN EVIDENZA</a>
                         <a class="link-spotify color-txt-lightgray font-weight">PODCAST</a>
                         <a class="link-spotify color-txt-lightgray font-weight">CLASSIFICHE</a>
                         <a class="link-spotify color-txt-lightgray font-weight">GENERI E MOOD</a>
@@ -91,7 +92,7 @@
                     <!-- card delle canzoni di spotify primo blocco-->
                     <div class="spotify-music-row color-txt-white overflow-auto">
                         <h1 class="font-size-title-main">Recently played</h1>
-                            <div class="container-row d-flex">
+                            <div class="container-row d-flex overflow-hidden flex-grow">
                                 <!-- primo quadrato con prima immagine canzone heavy metal -->
                                 <div class="square overflow-hidden">
                                     <img class="img-square" src="img/metal_lifting.jpg" alt="canzone metal_lifting">
@@ -151,6 +152,8 @@
                                     <img class="img-square" src="img/mixdaily.jpeg" alt="Stranger things">
                                     <h2 class="txt-center">Daily Mix 1</h2>
                                 </div>
+
+                            </div>    
                     </div>
 
                     <!-- terzo blocco immagini main -->
@@ -168,38 +171,33 @@
                             <div class="square overflow-hidden">
                                 <img class="img-square circle" src="img/einaudi.jpeg" alt="Stranger things">
                                 <h2 class="txt-center">Ludovico Einaudi</h2>
-                            </div>
+                           </div>
+                        </div>   
+                    </div>       
+                </div>            
+            </div>                
 
-                    </div>
-
-                                    
-
-                </div>
-
-
-
-            </div>
-        </div>
-        <!-- blocco sotto con flex-shrink -->
-        <div class="flex-shrink d-flex play-container">
+        </div>                    
+          <!-- blocco sotto con flex-shrink -->
+       <div class="flex-shrink d-flex play-container">
 
             <!-- Container di sinistra con icona e nome brano -->
             <div class="container-img-player d-flex flex-shrink align-center padding">
                 <!-- container immagine icona -->
-                <div class="img-player d-flex">
+                <div class="img-player flex-shrink d-flex">
                     <img class="img-sinister-size" src="img/sinister.jpeg" alt="">
                 </div>
 
                 <!-- container con nome brano -->
-                <div class="container-nome-brano d-flex flex-column align-center color-txt-white">
+                <div class="container-nome-brano d-flex flex-column align-center flex-shrink color-txt-white">
                     <a class="title-brano">Sinister</a>
                     <a class="subtitle-brano color-txt-lightgray">Brano Nome</a>
                 </div>
 
                 <!-- container con icone hearth e cartella -->
-                <div class="container-icons-player ">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-folder"></i>
+                <div class="container-icons-player d-flex">
+                    <div class="color-txt-lightgray flex-shrink padding-icon-player"><i class="fa-solid fa-heart"></i></div>
+                    <div class="color-txt-lightgray flex-shrink padding-icon-player"><i class="fa-solid fa-folder"></i></div>
                 </div>
             </div>
 
@@ -226,7 +224,9 @@
                         <div class="sec-player d-flex color-txt-white">0.25</div>
 
                         <!-- container barra di riproduzione -->
-                        <div class="progress-bar"></div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-white"></div>
+                        </div>
 
                         <!-- container total time -->
                         <div class="d-flex">
@@ -240,9 +240,9 @@
 
                 <!-- icone semplificate -->
                 <div class="d-flex ">
-                    <div><i class="fa-solid fa-bars"></i></div>
-                    <div><i class="fa-solid fa-tv"></i></div>
-                    <div><i class="fa-solid fa-volume-high"></i></div>
+                    <div class="color-txt-white padding-icon-player"><i class="fa-solid fa-bars"></i></div>
+                    <div class="color-txt-white padding-icon-player"><i class="fa-solid fa-tv"></i></div>
+                    <div class="color-txt-white padding-icon-player"><i class="fa-solid fa-volume-high"></i></div>
                 </div>
                 
                 <!-- barra di riproduzione piccola -->
@@ -251,6 +251,41 @@
                 </div>
             </div>
         </div>
+                    
+
+                                    
+
+                
+
+
+
+            </div>
+
+        </div>
+               
+       
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     </div>
+
+    
 </body>
 </html>
