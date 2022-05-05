@@ -316,17 +316,85 @@ body{
    .container-icons-player{
        display: block;
    }
+   .container-player-central{
+    max-width: 470px;
+    }
+    .padding-icon-player{
+        padding: .5em;
+    }
+    .container-img-player{
+        width: 14%;
+    }
+    .img-player{
+        margin-left: 5px;
+    }
+    .container-nome-brano{
+        margin-left: .4em;
+    }
+    .container-icons-player{
+        margin-left: .5em;
+    }
+    .btn-player{
+        padding: 0 .5rem;
+    }
+    .progress-bar{
+        max-width: 350px;
+        min-width: 350px;
+    }
+
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .square{
         width: calc(100% / 2);
+    }
+    .container-player-central{
+        max-width: 370px;
+    }
+    .progress-bar{
+        max-width: 250px;
+        min-width: 250px;
+    }
+    .progress-bar-white{
+        width: 40%;
+    }
+    .container-btn-smp{
+        display: block;
+    }
+    .container-img-player{
+    }
+    .link-spotify-border-bottom-green{
+        border-bottom: none;
     }
 }
 
 @media screen and (max-width:600px){
-
+    .progress-bar{
+        max-width: 120px;
+        min-width: 120px;
+    }
+    .progress-bar-white{
+        width: 40%;
+    }
+    .link-spotify{
+        padding: 5rem;
+    }
 }
-@media screen and (max-width: 500px){
 
+@media screen and (max-width:500px) {
+    .link-spotify{
+        padding: 6rem 5rem;
+    }
+    .sidebar{
+        width: 38px;
+    }
+    .container-playlist{
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+    .container-logo-spotify{
+        display: none;
+    }
 }
